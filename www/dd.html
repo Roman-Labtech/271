@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+ 
+  <script>
+  var result =1;
+    function countPow(n) {
+      for(var i=1; i<=5; i++) {
+        result*=n;
+        alert("В " + i +"-ой степени результат равен: "+ result);
+      }
+    }
+  </script>
+</head>
+<body>
+  <input type="button" onclick="countPow(3)" value="Узнать 5 степеней числа!"/>
+  
+  Вискозиметр ВЗ-246 применяется для определения динамической или кинематической вязкости вещества. <br>ВЗ-4 оснащен соплом на 4 мм. ВЗ 246 оснащен 3 соплами (2,4,6 мм.). Принцип действия основан на подсчёте времени протекания заданного объёма жидкости через узкое отверстие или трубку, при заданной разнице давлений. 
+
+         
+         <form class="contact_form" action="contact-form.php" method="post">
+
+         
+    <b>1. Тип Вискозиметра</b> <br><br>
+           <input type="radio" name="response1" value="1" checked="checked">
+            <span class="thumbnail1">
+                ВЗ-246  
+                <span>
+                <img class="alignnone" src="http://lab-shop.ru/products_pictures/vz-246-trtinoga-mini-300.jpg">
+                </span>
+            </span>
+            <br>
+            <input type="radio" name="response1" value="2" >
+            <span class="thumbnail1">
+               ВЗ-4
+                <span>
+                <img class="alignnone" src="http://lab-shop.ru/products_pictures/vz-4-trinoga-300.jpg">
+                </span>
+            </span>        
+      <br><br>
+    <b>2. Материал вискозиметра</b> <br>
+               <input type="radio" name="response2" value="1" checked="checked">
+            <span class="thumbnail1">
+                Алюминий 
+                <span>
+                <img class="alignnone" src="http://lab-shop.ru/products_pictures/vz-246-stativ-mini-300.jpg">
+                </span>
+            </span>
+            <br>
+            <input type="radio" name="response2" value="2" checked="">
+            <span class="thumbnail1">
+                Пластик 
+                <span>
+                <img class="alignnone" src="http://lab-shop.ru/products_pictures/VZ-4-stativ-mini-300.jpg">
+                </span>
+            </span>  
+      
+<br>  <br>
+    <b>3. Исполнение</b><br>
+         <input type="radio" name="response3" value="1" checked="checked">
+            <span class="thumbnail1">
+                Штатив 
+                <span>
+                <img class="alignnone" src="http://lab-shop.ru/products_pictures/vz-246-stativ-mini-300.jpg">
+                </span>
+            </span>
+            <br>
+            <input type="radio" name="response3" value="2" checked="">
+            <span class="thumbnail1">
+                Тринога
+                <span>
+                <img class="alignnone" src="http://lab-shop.ru/products_pictures/vz-4-trinoga-300.jpg">
+                </span>
+            </span>   
+            <br>
+            <input type="radio" name="response3" value="3" checked="">
+            <span class="thumbnail1">
+                Погружной
+                <span>
+                <img class="alignnone" src="http://lab-shop.ru/products_pictures/vz-246-pogr-mini-300.jpg">
+                </span>
+            </span>           
+      <br><br>
+    <b>4. Термометр</b><br>
+           <input type="radio" name="response4" value="1" checked="checked" onclick="check()">
+            <span class="thumbnail1">
+                ТТЖ-М 
+                <span>
+                <img class="alignnone" src="/images/g1.jpg">
+                </span>
+            </span>
+            <br>
+           <input type="radio" name="response4" value="2" checked="">
+            <span class="thumbnail1">
+                ТН-10
+                <span>
+                <img class="alignnone" src="/images/g2.jpg">
+                </span>
+            </span>        
+       <br>
+	   <input name="bezspama" type="text" style="display:none" value="" />
+       <br>
+        <p>
+         <button class="submit" type="submit">Отправить сообщение</button>
+        </p>        
+     
+</form>
+<script type="text/javascript">
+	var intImage = 2;
+function swapImage() {
+    switch (intImage) {
+        case 1:
+        change.src ="img/pic1.png";
+        intImage = 2;
+        return(false);
+        case 2:
+        change.src = "img/222.png";
+        intImage = 1;
+        return(false);
+    }
+	
+};
+	
+function check()
+	{
+	var variant=document.getElementsByName('response4');
+			
+    var val;
+if (variant[1].checked==true){
+	alert("1");     
+    }
+ if (variant[2].checked==true){
+	 alert("2");
+ }      
+
+
+};
+	</script>
+	<img  id="change"  name="change" src="/img/pic1.png" onclick="swapImage();StartStop()" />
+</body>
+</html>

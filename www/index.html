@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <title>Framework7 Material</title>
+    <link rel="stylesheet" href="css/framework7.material.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/icon.png">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+     document.addEventListener("deviceready", onDeviceReady, true);
+     navigator.splashscreen.show();   
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, true);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+    }
+
+    
+
+    function exitFromApp()
+       {
+           navigator.app.exitApp();
+       }               
+               
+      </script>   
+       
+  </head>
+
+
+  <body onload="startTime()" class="theme-red" onload="onLoad()">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal panelgrey">
+		<a href="index.html"><img src="img/222.png" width="100%"></a>
+      <div class="content-block">
+
+ 
+<div class="list-block accordion-list">
+  <ul>
+       <li class="accordion-item">
+        <div class="item-inner">
+         <a href="searchbar.html" class="item-content item-link">
+			 <i class="material-icons">search</i>Поиск  
+         </a>
+         </div>     
+    </li>
+    <li class="accordion-item">
+       <a href="#" class="item-content item-link">
+        <div class="item-inner">
+          <div class="item-title">Пробоотборники</div>
+        </div></a>
+      <div class="accordion-item-content">
+        <div class="content-block">
+			<p>-<a href="pgolist.html" data-ignore-cache="true" class="graylink">Газа</a></p>
+			<p>-<a href="neftlist.html" data-ignore-cache="true" class="graylink">Нефтепродуктов</a></p>
+			<p>-<a href="paintlist.html" data-ignore-cache="true" class="graylink">Красок</a></p>
+			<p>-<a href="agress.html" data-ignore-cache="true" class="graylink">Агрессивных сред</a></p>
+			<p>-<a href="eda.html" data-ignore-cache="true" class="graylink">Пищевых продуктов</a></p>
+        </div>
+      </div>
+    </li>
+    <li class="accordion-item">
+       <a href="viscolist.html" data-ignore-cache="true" > 
+        <div class="item-inner">
+          <div class="item-title mainlinks">
+			Вискозиметры
+          </div>
+        </div>
+        </a>
+    </li>
+    <li class="accordion-item">                  
+        <a href="ventilist.html" data-ignore-cache="true">
+			<div class="item-inner">
+			  <div class="item-title mainlinks">
+				<i class="icon icon-help_fill"></i>
+					Запорная арматура
+			  </div>
+			</div>
+        </a>
+    </li>
+    <li class="accordion-item">
+        <a href="microlist.html" data-ignore-cache="true">
+			<div class="item-inner">
+				<div class="item-title mainlinks">
+				  Микрошприцы
+				</div>          
+			 </div>
+         </a>       
+   	</li>
+
+  </ul>
+</div>     
+		       
+         <a href="color-themes.html" >
+             <div class="item-content">       
+                        <div class="item-inner">
+							<div class="item-title"><b>Калькулятор ВЗ-246</b></div>
+                        </div>
+             </div>
+         </a>
+         <br>
+		  <div> 
+		  <a href="question.html" data-ignore-cache="true" class="graylink" >
+		  <i class="material-icons icon-settings">help_outline</i>Справка</a></div>
+		    <div> <br>
+		  <a href="#" data-ignore-cache="true" class="graylink" onClick="exitFromApp()">
+		  <i class="material-icons icon-settings">help_outline</i>Выход</a></div>
+  
+   
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding"></div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">ООО "Лабораторные Технологии"</div>
+              <div class="content-block">
+                <div class="content-block-inner">
+                       <p>
+                  	Наша организация ООО "Лабораторные Технологии" предлагает своим клиентам такое оборудование, как микрошприцы, различные пробоотборники и оборудование к ним, емкости из нержавеющей стали. 
+                  	  
+                  </p><br>
+                  <img src="img/screen.png"> 
+                  
+
+                  
+                  
+                </div>
+              </div>
+             
+              <div class="list-block">
+                <ul>
+                  <li><a href="about.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="item-title">About</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="services.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Services</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="form.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Form new VZ-246</div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="content-block-title">Side panels</div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
+                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+  </body>
+</html>
